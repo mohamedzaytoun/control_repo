@@ -10,7 +10,7 @@ node 'master.puppet.vm' {
     
     file { '/root/README':
     ensure => file,
-    content => $fqdn,
+    content => "welcome to ${fqdn}\n "  ,
     }
 }
 node /^web/ {
